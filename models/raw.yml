@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: lightdash_superstore
+    schema: lightdash_superstore
+    tables:
+      - name: sample_superstore
+        description: "サンプルスーパーストア 注文データ"
