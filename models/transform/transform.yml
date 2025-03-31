@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: transform
+    description: 元データを整形
+    columns:
+      - name: order_id
+        description: オーダーID
+      - name: order_date
+        description: オーダー日
+      - name: shipping_date
+        description: 出荷日
+      - name: shipping_mode
+        description: 出荷モード
+      - name: customer_id
+        description: 顧客ID
+      - name: customer_name
+        description: 顧客名
+      - name: customer_type
+        description: 顧客タイプ
+      - name: city
+        description: 市区町村
+      - name: prefectures
+        description: 都道府県
+      - name: country
+        description: 国
+      - name: region
+        description: 地域
+      - name: product_id
+        description: 商品ID
+      - name: category
+        description: カテゴリ
+      - name: subcategory
+        description: サブカテゴリ
+      - name: product_name
+        description: 商品名
+      - name: sales
+        description: 売上
+      - name: quantity
+        description: 数量
+      - name: discount_rate
+        description: 割引率
+      - name: profit
+        description: 利益
