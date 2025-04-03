@@ -6,6 +6,10 @@ models:
     columns:
       - name: order_id
         description: オーダーID
+        meta:
+          metrics:
+            unique_id:
+              type: count_distinct
       - name: order_date
         description: オーダー日
       - name: shipping_date
@@ -42,3 +46,8 @@ models:
         description: 割引率
       - name: profit
         description: 利益
+        meta:
+          metrics:
+            plus_ink:
+              type: sum
+              sql: 'IF(${profit} >= 0, ${profit}, 0)'
